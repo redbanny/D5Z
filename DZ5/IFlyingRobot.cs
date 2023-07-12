@@ -1,5 +1,5 @@
 public interface IFlyingRobot : IRobot
 {
-    string GetRobotType() =>
+    new string GetRobotType() =>
         "I am a flying robot.";    
 }

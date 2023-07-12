@@ -1,13 +1,14 @@
-﻿public class Quadcopter : IFlyingRobot, IChargeable
+﻿
+public class Quadcopter : IFlyingRobot, IChargeable
 {
     private List<string> _components = new List<string> { "rotor1", "rotor2", "rotor3", "rotor4" };
 
-    public string GetRobotType() =>    
-        "Quadcopter information";    
+    public string GetInfo() =>
+        "Quadcopter information";
 
-    public List<string> GetComponents() =>    
+    public List<string> GetComponents() =>
         _components;
-    
+
 
     public void Charge()
     {
